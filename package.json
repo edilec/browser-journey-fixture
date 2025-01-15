@@ -1,0 +1,17 @@
+{
+  "name": "browser-journey-fixture",
+  "version": "0.0.0",
+  "description": "Replay browser journeys with stable selectors, checkpoints and evidence.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edilec/browser-journey-fixture"
+  }
+}
