@@ -1,13 +1,18 @@
 {
   "name": "browser-journey-fixture",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Replay browser journeys with stable selectors, checkpoints and evidence.",
   "type": "module",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test"
+    "lint": "node --check src/index.mjs && node --check bin/browser-journey-fixture.mjs",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
+  },
+  "bin": {
+    "browser-journey-fixture": "./bin/browser-journey-fixture.mjs"
   },
   "license": "MIT",
   "repository": {
