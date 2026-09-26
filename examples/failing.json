@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "complete": true,
+  "journeys": [{
+    "id": "synthetic-a", "initialState": { "session": "alpha" },
+    "steps": [
+      { "id": "open", "selector": "open-button", "action": "click", "expected": { "route": "/form", "state": { "session": "alpha" } } },
+      { "id": "submit", "selector": "submit-button", "action": "submit", "expected": { "route": "/done", "state": { "session": "alpha" } } }
+    ]
+  }],
+  "traces": [{
+    "journeyId": "synthetic-a", "complete": true, "initialState": { "session": "alpha" },
+    "steps": [
+      { "stepId": "open", "selector": "open-button", "action": "click", "route": "/form", "state": { "session": "alpha" } },
+      { "stepId": "submit", "selector": "submit-button", "action": "submit", "route": "/error", "state": { "session": "alpha" } }
+    ]
+  }]
+}
